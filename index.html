@@ -290,7 +290,7 @@
                         ${item.notes ? `<p style="font-size:12px; color:var(--text-muted);">${item.notes}</p>` : ''}
                         
                         <div class="card-actions">
-                            <a href="[https://www.google.com/search?q=$](https://www.google.com/search?q=$){encodeURIComponent(item.name + ' restock buy')}" target="_blank" class="action-btn" style="text-decoration: none;">🔍 Restock</a>
+                            <a href="https://www.google.com/search?q=${encodeURIComponent(item.name + ' restock buy')}" target="_blank" class="action-btn" style="text-decoration: none;">🔍 Restock</a>
                             <button class="action-btn admin-only" onclick="deleteItem('${item.id}')">Delete</button>
                             <button class="action-btn admin-only" onclick="editItem('${item.id}')">Edit</button>
                         </div>
